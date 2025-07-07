@@ -67,8 +67,8 @@ All dependent OpenZeppelin contracts assumed audited and unchanged.
 
 ### 🔬 Proof of Concept (PoC)
 
-![Replay Attack Proof](./ss/deploy.png)
-![Replay Attack Proof](./ss/replayattack-success.png)
+![Replay Attack Proof](./images/deploy.png)
+![Replay Attack Proof](./images/replayattack-success.png)
 
 This proof demonstrates a **replay attack** made possible due to the absence of an expiry timestamp in the signed payload.  
 Because the same `requestId` and `signature` can be reused without expiration control, the attacker was able to **successfully reuse a previously signed payload** and re-submit it on-chain, resulting in unauthorized execution.
@@ -274,8 +274,8 @@ Signatures are valid indefinitely as long as they’re unused. No timestamp or e
 
 ### 🔬 Proof of Concept (PoC)
 
-![Replay Attack Proof](./ss/deploy.png)
-![Replay Attack Proof](./ss/replayattack-success.png)
+![Replay Attack Proof](./images/deploy.png)
+![Replay Attack Proof](./images/replayattack-success.png)
 
 This proof demonstrates a **replay attack** made possible due to the absence of an expiry timestamp in the signed payload.  
 Because the same `requestId` and `signature` can be reused without expiration control, the attacker was able to **successfully reuse a previously signed payload** and re-submit it on-chain, resulting in unauthorized execution.
